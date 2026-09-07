@@ -1,0 +1,58 @@
+# Decorator to format report output
+def report_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("\n" + "=" * 40)
+        print("        REPORT")
+        print("=" * 40)
+        func(*args, **kwargs)
+        print("=" * 40)
+    return wrapper
+
+
+class Report:
+    # Class variable
+    template = "General Report"
+
+    # Constructor
+    def __init__(self, title, content):
+        self.title = title
+        self.content = content
+
+    # Class Method
+    @classmethod
+    def set_template(cls, new_template):
+        cls.template = new_template
+
+    # Magic Method
+    def __str__(self):
+        return f"Template : {Report.template}\nTitle    : {self.title}\nContent  : {self.content}"
+
+    # Method with Decorator
+    @report_decorator
+    def display_report(self):
+        print(self)
+
+    # Method to change content dynamically
+    def update_content(self, new_content):
+        self.content = new_content
+
+
+# ---------------- MAIN PROGRAM ----------------
+
+# Set report template
+Report.set_template("Student Report")
+
+# Create report object
+report1 = Report(
+    "Python Assignment",
+    "This report explains decorators, class methods, and magic methods."
+)
+
+# Display report
+report1.display_report()
+
+# Update report content
+report1.update_content("Updated report with new formatting and content.")
+
+print("\nAfter Updating Report:")
+report1.display_report()
