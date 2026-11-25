@@ -21,3 +21,20 @@ df = df[df['Name'].notnull()]
 
 print("\nUpdated DataFrame:")
 print(df)
+
+
+# output
+Original DataFrame:
+    Name   Age  Weight  Blood Pressure
+0  Aarav  20.0    60.0           120.0
+1   Diya   NaN     NaN           130.0
+2  Rahul  25.0    70.0             NaN
+3   None  22.0    65.0           125.0
+4  Priya   NaN    55.0           115.0
+
+Updated DataFrame:
+    Name        Age  Weight  Blood Pressure
+0  Aarav  20.000000    60.0           120.0
+1   Diya  22.333333    62.5           130.0
+2  Rahul  25.000000    70.0           122.5
+4  Priya  22.333333    55.0           115.0
