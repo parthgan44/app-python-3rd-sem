@@ -28,3 +28,12 @@ n = int(input("Enter n: "))
 
 print("Memoization:", fibonacci_memo(n))
 print("Tabulation:", fibonacci_tab(n))
+
+
+
+
+# output
+Enter n: 10
+Memoization: 55
+Tabulation: 55
+
