@@ -73,3 +73,23 @@ library.display_books()
 library.return_book("Python Basics")
 
 library.display_books()
+
+# output
+Python Basics added successfully.
+Data Structures added successfully.
+Purva registered successfully.
+
+Library Books:
+Python Basics - Available
+Data Structures - Available
+Book borrowed successfully.
+
+Library Books:
+Python Basics - Borrowed
+Data Structures - Available
+Book returned successfully.
+
+Library Books:
+Python Basics - Available
+Data Structures - Available
+
