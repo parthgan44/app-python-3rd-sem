@@ -83,3 +83,18 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+# output
+Enter payment amount: 500
+
+Select Payment Method
+1. Credit Card
+2. Debit Card
+3. UPI
+4. Cash
+Enter your choice: 3
+Paid ₹500.0 using UPI.
