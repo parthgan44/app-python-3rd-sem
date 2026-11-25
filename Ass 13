@@ -1,3 +1,7 @@
+
+
+
+
 # assignment code for 13 
 # Step 1: Import the threading module
 import threading
@@ -34,3 +38,20 @@ t3.join()
 
 # Step 8: Print the final message
 print("All tasks completed!")
+
+
+
+
+
+
+# output
+Task 1 - Counting: 1
+Task 1 - Counting: 2
+Task 1 - Counting: 3
+Task 2 - Counting: 1
+Task 2 - Counting: 2
+Task 2 - Counting: 3
+Task 3 - Counting: 1
+Task 3 - Counting: 2
+Task 3 - Counting: 3
+All tasks completed!
