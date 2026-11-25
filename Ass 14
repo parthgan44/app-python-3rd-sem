@@ -64,3 +64,32 @@ logging.info("Program finished")
 # Step 11: Display the final message
 print("\nProgram execution completed!")
 print("Check app.log for execution details.")
+
+
+
+
+# output
+Dividing 10 by 2:
+Result: 5.0
+
+Dividing 10 by 0:
+Result: None
+
+Program execution completed!
+Check app.log for execution details.
+
+# app.log contents
+2026-11-25 12:08:00,120 - INFO - Program started
+2026-11-25 12:08:00,120 - INFO - Division function started
+2026-11-25 12:08:00,120 - DEBUG - Values received: a=10, b=2
+2026-11-25 12:08:00,120 - INFO - Division successful
+2026-11-25 12:08:00,120 - DEBUG - Calculated result: 5.0
+2026-11-25 12:08:00,121 - INFO - Division function started
+2026-11-25 12:08:00,121 - DEBUG - Values received: a=10, b=0
+2026-11-25 12:08:00,121 - ERROR - Cannot divide by zero
+Traceback (most recent call last):
+  File "ass14.py", line 30, in divide_numbers
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2026-11-25 12:08:00,122 - INFO - Program finished
