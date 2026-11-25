@@ -69,3 +69,15 @@ tracemalloc.stop()
 
 # End of program
 print("Garbage collection completed successfully!")
+
+
+
+
+# output
+Memory before GC: 22.19 KB
+Objects collected: 400
+Memory after GC: 0.64 KB
+Peak traced memory: 78.44 KB
+GC execution time: 0.000312 seconds
+Garbage collection completed successfully!
+
