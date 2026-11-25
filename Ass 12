@@ -39,3 +39,36 @@ plt.title("Salary Distribution")
 plt.xlabel("Salary")
 plt.ylabel("Frequency")
 plt.show()
+
+
+
+
+# output
+Original DataFrame:
+    Name  Age Department  Salary
+0  Aarav   22         IT   30000
+1   Diya   25         HR   35000
+2  Rahul   28         IT   40000
+3  Priya   24      Sales   32000
+4   Neha   30         HR   38000
+5  Karan   27         IT   45000
+6   Riya   23      Sales   33000
+7   Aman   35         IT  150000
+
+Mean: 50375.0
+Median: 36500.0
+Standard Deviation: 40542.52617433772
+
+DataFrame after removing outliers:
+    Name  Age Department  Salary
+0  Aarav   22         IT   30000
+1   Diya   25         HR   35000
+2  Rahul   28         IT   40000
+3  Priya   24      Sales   32000
+4   Neha   30         HR   38000
+5  Karan   27         IT   45000
+6   Riya   23      Sales   33000
+
+[Displays 2 Matplotlib plots:
+ 1. Boxplot titled "Salary Boxplot" with y-axis "Salary" (ranging from 30,000 to 45,000)
+ 2. Histogram titled "Salary Distribution" with x-axis "Salary", y-axis "Frequency", and 5 bins]
