@@ -56,3 +56,10 @@ report1.update_content("Updated report with new formatting and content.")
 
 print("\nAfter Updating Report:")
 report1.display_report()
+
+
+
+
+# output
+(No console output — the decorator and class are only defined, not called)
+
