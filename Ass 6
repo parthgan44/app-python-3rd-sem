@@ -58,3 +58,11 @@ print("Maximum value using Bottom-Up:",
 
 print("Maximum value using Top-Down:", 
       knapsack_top_down(weights, values, capacity))
+
+
+
+
+
+# output
+Maximum value using Bottom-Up: 16
+Maximum value using Top-Down: 16
